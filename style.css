@@ -28,6 +28,10 @@
     color: rgb(252, 174, 97);
   }
   
+
+header nav{
+  display: block;
+}
 header nav ul{
     list-style-type: none;
 }

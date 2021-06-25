@@ -15,17 +15,23 @@ for (i = 0; i < acc.length; i++) {
 
 
   var x = document.getElementById("mobile-menu");
-  console.log(x);
   var nav= document.getElementById("main-menu");
-  console.log(nav);
+  var content=document.getElementsByTagName('body')[0];
+  var mobileicon=document.getElementById("mobile-icon");
+
+ 
 
   x.onclick=function(){
     if (nav.className === "active") {
       nav.style.display="none";
       nav.classList.remove("active");
+      content.style.overflow="initial";
+      mobileicon.setAttribute("src", "images/mobile-menu.png");
     } else {
       nav.style.display="block";
       nav.classList.add("active");
+      content.style.overflow="hidden";
+      mobileicon.setAttribute("src", "images/cancel.png");
     }
 
     
