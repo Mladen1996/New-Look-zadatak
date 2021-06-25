@@ -1,11 +1,25 @@
 @media only screen and (max-width: 768px) {
-    header .mobile-menu{
+   header #mobile-menu{
+        display: block;
+    }
+
+   /* header nav{
+        display: none;
+    }*/
+
+    header nav ul li{
         display: block;
     }
 
     header nav{
-        display: none;
+        position: absolute;
+    top: 15%;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    display: none;
     }
+    
 
     .main-section {
         background: none;
@@ -80,6 +94,15 @@
         margin-right: 45px;
     }
 
+    .features .features-box .item-box .item-description{
+        padding-left:0px;
+    }
+
+    .features .features-box .item-box .item-description h4,.features .features-box .item-box .item-description p 
+        {
+        text-align: center;
+    }
+
     .smart-jackpots .text-row, .smart-jackpots .items-row{
         flex-direction: column;
     }
@@ -105,6 +128,12 @@
     .designed .text-column {
         width: 100%;
         margin-top: 30px;
+        margin-left: 0px;
+
+    }
+
+    .designed .text-column h3,.choose-app h3{
+        font-size: 30px;
     }
 
     .choose-app .items{
@@ -126,10 +155,17 @@
     }
     .ultimate-features .text-column{
         width: 100%;
-        padding-left: 60px;
+        padding-left: 35px;
     }
     .ultimate-features .items .item, .ultimate-features .text-column .text-box, .ultimate-features .image-column{
         width: 100%;
+    }
+
+    .ultimate-features .items .item{
+        padding-right: 0px;
+    }
+    .ultimate-features h3{
+        font-size: 30px;
     }
 
     .pricing{
@@ -137,6 +173,9 @@
     }
     .pricing .pricing-heading{
         width: 100%;
+    }
+    .pricing h3 {
+        font-size: 30px;
     }
     .pricing .pricing-plans {
         flex-direction: column;
@@ -151,6 +190,9 @@
         flex-direction: column;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .testimonial .text-box h3{
+        font-size: 30px;
     }
     .testimonial .image-box{
         width: 100%;
@@ -178,6 +220,10 @@
         flex-direction: column;
     }
 
+    .download-app h3{
+        font-size: 40px;
+    }
+
      .download-app .download-image{
         width: 100%;
         margin-left: 0px;
@@ -200,8 +246,17 @@
         margin-bottom: 20px;
     }
 
+    footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     footer ul li{
         display: block;
+    }
+
+    footer p{
+        text-align: center;
     }
   }
 

@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
+/*var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -11,4 +11,23 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
-}
+}*/
+
+
+  var x = document.getElementById("mobile-menu");
+  console.log(x);
+  var nav= document.getElementById("main-menu");
+  console.log(nav);
+
+  x.onclick=function(){
+    if (nav.className === "active") {
+      nav.style.display="none";
+      nav.classList.remove("active");
+    } else {
+      nav.style.display="block";
+      nav.classList.add("active");
+    }
+
+    
+  }
+  

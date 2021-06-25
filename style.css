@@ -53,7 +53,7 @@ header nav ul li button{
     height: 57px;
 }
 
-header .mobile-menu{
+header #mobile-menu{
     display: none;
 }
 
