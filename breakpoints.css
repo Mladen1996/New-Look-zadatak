@@ -1,0 +1,215 @@
+@media only screen and (max-width: 768px) {
+    header .mobile-menu{
+        display: block;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .main-section {
+        background: none;
+        margin-top: 30px;
+        height: auto;
+    }
+    .main-section .container{
+        flex-direction: column;
+    }
+
+    .main-section .container .box{
+        width: 100%;
+    }
+
+    .main-section .box h1{
+        font-size: 40px;
+    }
+
+    .main-section .box .button-group{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .main-section .box .button-group button{
+        margin-bottom: 20px;
+    }
+    .main-section .box .button-group a{
+        padding-left: 0px;
+    }
+
+    .main-section .box .choice-app{
+        width: 100%;
+        height: 50px;
+    }
+
+
+
+    .main-section .choice-app p{
+        font-size: 16px;
+    }
+
+    .main-section .box .icon-box{
+        height: 50px;
+    }
+
+    .main-section .box .icon-box img{
+        padding-top: 15px;
+    }
+
+    .company{
+        padding-bottom:0px;
+    }
+    .company .company-box img {
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .company .company-box img:last-child{
+        display: block;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+    .features .image-box img{
+        width: 100%;
+    }
+
+    .features .features-box{
+        width: 100%;
+        margin-right: 45px;
+    }
+
+    .smart-jackpots .text-row, .smart-jackpots .items-row{
+        flex-direction: column;
+    }
+
+    .smart-jackpots .text-row h3{
+        font-size: 30px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .smart-jackpots .items-row .item{
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .designed{
+        flex-direction: column;
+    }
+
+    .designed img{
+        width: 100%;
+    }
+    .designed .text-column {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .choose-app .items{
+        flex-direction: column;
+    }
+
+    .choose-app .items .item{
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+
+    .choose-app p{
+        margin-bottom: 50px;
+    }
+
+    .ultimate-features, .ultimate-features .items{
+        flex-direction: column;
+    }
+    .ultimate-features .text-column{
+        width: 100%;
+        padding-left: 60px;
+    }
+    .ultimate-features .items .item, .ultimate-features .text-column .text-box, .ultimate-features .image-column{
+        width: 100%;
+    }
+
+    .pricing{
+        padding-bottom: 0px;
+    }
+    .pricing .pricing-heading{
+        width: 100%;
+    }
+    .pricing .pricing-plans {
+        flex-direction: column;
+    }
+
+    .pricing .pricing-plans .plan{
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+
+    .testimonial{
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .testimonial .image-box{
+        width: 100%;
+    }
+
+    .testimonial .text-box{
+        width: 80%;
+        margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 45px;
+    }
+
+    .testimonial .testimonial-author {
+        flex-wrap: wrap;
+    }
+
+    .faq .faq-heading{
+        width: 100%;
+    }
+
+    .faq h3{
+        font-size:30px;
+    }
+    .download-app{
+        flex-direction: column;
+    }
+
+     .download-app .download-image{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .download-app .download-text{
+        width: 80%;
+        margin-left:0px;
+       
+    }
+
+    .download-app .image-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-app .image-box img{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    footer ul li{
+        display: block;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .company .company-box img:last-child{
+        display: initial;
+    }
+    .features .features-box .item-box{
+        flex-direction: column;
+    }
+  }
