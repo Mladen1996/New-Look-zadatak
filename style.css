@@ -163,6 +163,9 @@ header #mobile-menu{
 
 .company .company-box {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .company .company-box img{

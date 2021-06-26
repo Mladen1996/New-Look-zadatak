@@ -1,21 +1,7 @@
-@media only screen and (max-width: 420px) {
-    
-    .cоmpany .company-box img:last-child{
-        display: initial!important;
-    }
-    .features .features-box .item-box{
-        flex-direction: column;
-    }
-  }
-
-@media only screen and (max-width: 768px) {
-   header #mobile-menu{
+@media only screen and (max-width: 1024px) {
+    header #mobile-menu{
         display: block;
     }
-
-   /* header nav{
-        display: none;
-    }*/
 
     header nav ul li{
         display: block;
@@ -30,12 +16,15 @@
     display: none;
     height: 90%;
     }
-    
+}
+
+@media only screen and (max-width: 768px) {
+   
 
     .main-section {
         margin-top: 30px;
         height: auto;
-        background-position: 60% 50%;
+        background-position: 50% 50%;
         background-size: cover;
     }
     .main-section .container{
@@ -85,6 +74,17 @@
     .company{
         padding-bottom:0px;
     }
+
+    .company .company-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: initial;
+    }
+
+    .company .company-box div{
+        width: 50%;
+    }
     .company .company-box img {
         padding-right: 30px;
         padding-bottom: 30px;
@@ -96,6 +96,7 @@
 
     .features{
         flex-direction: column;
+        width: 80%;
     }
     .features .image-box img{
         width: 100%;
@@ -103,14 +104,19 @@
 
     .features .features-box{
         width: 100%;
-        margin-right: 45px;
+        margin-left: 0px;
+    }
+
+    .features .features-box h3{
+        font-size: 30px;
+        text-align: center;
     }
 
     .features .features-box .item-box .item-description{
-        padding-left:0px;
+        padding-left:10px;
     }
 
-    .features .features-box .item-box .item-description h4,.features .features-box .item-box .item-description p 
+    .features .features-box .item-box .item-description h4,.features .features-box p 
         {
         text-align: center;
     }
@@ -132,6 +138,7 @@
 
     .designed{
         flex-direction: column;
+        width: 80%;
     }
 
     .designed img{
@@ -166,8 +173,9 @@
         flex-direction: column;
     }
     .ultimate-features .text-column{
-        width: 100%;
-        padding-left: 35px;
+        width: 80%;
+        padding-left: 0px;
+        margin-bottom: 40px;
     }
     .ultimate-features .items .item, .ultimate-features .text-column .text-box, .ultimate-features .image-column{
         width: 100%;
@@ -178,6 +186,11 @@
     }
     .ultimate-features h3{
         font-size: 30px;
+        text-align: center;
+    }
+
+    .ultimate-features .text-box p{
+        text-align: center;
     }
 
     .pricing{
@@ -212,8 +225,6 @@
 
     .testimonial .text-box{
         width: 80%;
-        margin-left: 45px;
-    margin-right: 45px;
     margin-top: 45px;
     }
 
@@ -277,4 +288,20 @@
   }
 
 
- 
+  @media only screen and (max-width: 420px) {
+    
+
+    .company .company-box div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .features .features-box .item-box{
+        flex-direction: column;
+    }
+
+    .features .features-box .item-box .item-description{
+        padding-left:0px;
+    }
+  }
