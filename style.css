@@ -1055,5 +1055,9 @@ header #mobile-menu{
     line-height: 3.143;
     margin-top: 90px;
   }
+
+  footer .logo h1{
+    color: white;
+  }
   
   
