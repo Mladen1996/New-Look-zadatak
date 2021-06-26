@@ -780,13 +780,58 @@ header #mobile-menu{
   justify-content: space-between;
   align-items: center;
   }
+
+  .testimonial .testimonial-author .author-info{
+    display: flex;
+    align-items: center;
+  }
   
+  .testimonial .testimonial-author .author-info p{
+    margin-bottom: 0px;
+  }
+  .testimonial .testimonial-author .author-info div{
+    padding-left: 15px;
+  }
   .testimonial .testimonial-author h4 {
     font-size: 18px;
     line-height: 3.222;
     margin: 0;
   }
+
+  .testimonial .testimonial-author .arrows{
+    display:flex;
+    align-items: center;
+  }
   
+  .testimonial .testimonial-author .arrows div{
+    border-width: 2px;
+    border-color: rgb(239, 243, 248);
+    border-style: solid;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+  }
+
+  .testimonial .testimonial-author .arrows .next-arrow {
+   
+    background-color: rgb(239, 243, 248);
+    
+  }
+  
+
+  .testimonial .testimonial-author .arrows span {
+    background-color: rgb(231, 231, 231);
+    width: 1px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+
+  .testimonial .testimonial-author .arrows div img{
+    padding-top: 15px;
+    padding-left: 10px;
+  }
 
   .faq{
     width: 80%;
@@ -826,30 +871,44 @@ header #mobile-menu{
   .faq .accordion {
     background-color: rgb(245, 247, 250);
     cursor: pointer;
-    padding: 25px 45px;
+    padding: 20px 45px 0px 45px;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
+   
     transition: 0.4s;
+   
+    margin-bottom: 10px;
+  }
+
+  .faq .accordion .accordion-question{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .faq .accordion button{
     font-weight: bold;
     font-size: 20px;
     font-family: "Poppins";
     color: rgb(36, 47, 81);
+    border: none;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    margin-bottom: 20px;
   }
   
-  .faq .active, .faq .accordion:hover {
+ /* .faq .active, .faq .accordion:hover {
     background-color: #ccc; 
-  }
+  }*/
   
   .faq .panel {
-    padding: 0 45px;
-   /* display: none;*/
+    display: none;
     overflow: hidden;
     background-color: rgb(245, 247, 250);
-    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
+ 
 
   
   .faq .panel p {

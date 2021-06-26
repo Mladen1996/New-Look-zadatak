@@ -1,3 +1,13 @@
+@media only screen and (max-width: 420px) {
+    
+    .cоmpany .company-box img:last-child{
+        display: initial!important;
+    }
+    .features .features-box .item-box{
+        flex-direction: column;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
    header #mobile-menu{
         display: block;
@@ -23,9 +33,10 @@
     
 
     .main-section {
-        background: none;
         margin-top: 30px;
         height: auto;
+        background-position: 60% 50%;
+        background-size: cover;
     }
     .main-section .container{
         flex-direction: column;
@@ -207,7 +218,11 @@
     }
 
     .testimonial .testimonial-author {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .testimonial .testimonial-author .arrows{
+        margin-top: 20px;
     }
 
     .faq .faq-heading{
@@ -261,13 +276,5 @@
     }
   }
 
-  @media only screen and (max-width: 420px) {
-    
-    
-    .cоmpany .company-box img:last-child{
-        display: initial;
-    }
-    .features .features-box .item-box{
-        flex-direction: column;
-    }
-  }
+
+ 
