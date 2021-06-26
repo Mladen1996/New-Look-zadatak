@@ -1,11 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+@font-face {
+	font-family: "Poppins";
+    src:url('fonts/Poppins-Regular.woff') format('woff'),
+     url("fonts/Poppins-Regular.ttf") format("ttf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins-Bold";
+    src:url('fonts/Poppins-Bold.woff') format('woff'),
+     url("fonts/Poppins-Bold.ttf") format("ttf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins-Medium";
+    src:url('fonts/Poppins-Medium.woff') format('woff'),
+     url("fonts/Poppins-Medium.ttf") format("ttf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins-SemiBold";
+    src:url('fonts/Poppins-SemiBold.woff') format('woff'),
+     url("fonts/Poppins-SemiBold.ttf") format("ttf");
+	font-display: swap;
+}
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .container{
     width: 80%;
@@ -18,9 +50,8 @@
 
 .logo h1{
     font-size: 30px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.467;
   }
 
@@ -39,22 +70,27 @@ header nav ul{
 header nav ul li{
     display: inline;
     font-size: 16px;
-    font-family: "Poppins";
-    color: rgb(36, 47, 81);
+    font-family: "Poppins-Medium"; 
     line-height: 2.75;
     padding-right: 30px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: rgb(36, 47, 81);
 }
 
 header nav ul li button{
     color: rgb(255, 255, 255);
     background-color: rgb(37, 0, 249);
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     line-height: 2.75;
     border: none;
     border-radius: 30px;
     width: 170px;
     height: 57px;
+    cursor: pointer;
 }
 
 header #mobile-menu{
@@ -62,42 +98,42 @@ header #mobile-menu{
 }
 
 .main-section{
-    background: url('images/phone.png');
+    background: url('images/phone-new.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 735px;
 }
 
 .main-section .container{
-    height: 75%;
+    height: 100%;
 }
 
 .main-section .box{
     width:50%;
+    margin-left: 5%;
 }
 
 .main-section .box h1{
     font-size: 60px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.25;    
     padding-bottom: 40px;    
 }
 
 .main-section .box p{
     font-size: 18px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.556;
     padding-bottom: 40px;
 }
 
 .main-section .box button{
-    color: rgb(255, 255, 255);
+    
     background-color: rgb(37, 0, 249);
     font-size: 16px;
-    font-family: "Poppins";
+    
     line-height: 2.75;
     border: none;
     border-radius: 30px;
@@ -105,11 +141,17 @@ header #mobile-menu{
     height: 57px;
 }
 
+.main-section .box button a{
+  color: rgb(255, 255, 255);
+  padding-left: 0px;
+  font-family: "Poppins-Bold";
+}
+
 
 .main-section .box a{
     text-decoration: none;
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(37, 0, 249);
     line-height: 2.75;
     padding-left: 30px;
@@ -141,14 +183,14 @@ header #mobile-menu{
     padding-bottom: 0px;
     padding-left: 5px;
     font-size: 18px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(36, 47, 81);
     line-height: 1.556;
 }
 
 .company{
     width: 80%;
-    padding: 110px 0%;
+    padding: 110px 0px 0px 0px;
     margin: 0 auto;
 }
   
@@ -156,7 +198,7 @@ header #mobile-menu{
     text-align: center;
     margin-bottom: 30px;
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(36, 47, 81);
     line-height: 1.75;
 }
@@ -182,22 +224,21 @@ header #mobile-menu{
 }
 
 .features .features-box{
-    margin-left: 45px;
+    margin-left: 5%;
     width: 35%;
 }
 
 .features .features-box h3{
     font-size: 36px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.278;
     margin-bottom: 30px;
 }
 
 .features .features-box p{
     font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins-Medium";
   color: rgb(97, 99, 104);
   line-height: 1.625;
   margin-bottom: 90px;
@@ -215,9 +256,8 @@ header #mobile-menu{
 
 .features .features-box .item-box .item-description h4{
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(245, 87, 103);
-    font-weight: bold;
     line-height: 2.9;
 }
 
@@ -261,16 +301,15 @@ header #mobile-menu{
 
 .smart-jackpots .text-row h3{
     font-size: 40px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.25;
     padding-right: 80px;
 }
 
 .smart-jackpots .text-row p{
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     border-left: 1px solid rgba(75,74,72,0.388);
@@ -283,7 +322,7 @@ header #mobile-menu{
 }
 
 .smart-jackpots .items-row .item{
-    padding-right: 110px;
+    padding-right: 100px;
 }
 .smart-jackpots .items-row .icon-box{
     border-radius: 50%;
@@ -296,16 +335,15 @@ header #mobile-menu{
 
 .smart-jackpots .items-row h4{
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(245, 87, 103);
-    font-weight: bold;
     line-height: 2.9;
 
 }
 
 .smart-jackpots .items-row p{
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
 
@@ -334,17 +372,24 @@ header #mobile-menu{
     display: flex;
     align-items: center;
 }
+
+.designed div{
+  width: 50%;
+}
+
+.designed div img{
+  width: 100%;
+}
   
 .designed .text-column{
-    margin-left: 45px;
-    width: 35%;
+    margin-left: 10%;
+    width: 30%;
 }
 
 .designed .text-column h3 {
     font-size: 36px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.278;
     margin-bottom: 30px;
   }
@@ -352,7 +397,7 @@ header #mobile-menu{
 
   .designed .text-column p{
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     margin-bottom: 35px;
@@ -361,27 +406,37 @@ header #mobile-menu{
   .designed .text-column button {
     width: 170px;
     height: 57px;
-    color: rgb(255, 255, 255);
+    
     background-color: rgb(37, 0, 249);
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     line-height: 2.75;
     border: none;
     border-radius: 30px;
-    font-weight: bold;
+  }
+
+  .designed .text-column button a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
   
   .choose-app{
-    width: 80%;
-    padding: 2% 0%;
+    width: 67%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+  .choose-app .choose-app-heading{
+    width: 55%;
+  }
 
 .choose-app h3{
     font-size: 36px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.278;
     text-align: center;
     margin-bottom: 35px;
@@ -389,7 +444,7 @@ header #mobile-menu{
 
 .choose-app p{
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     text-align: center;
@@ -452,9 +507,8 @@ header #mobile-menu{
   
 .choose-app .items .item h4 {
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 2.9;
     text-align: center;
 
@@ -469,31 +523,35 @@ header #mobile-menu{
   
     display: flex;
     justify-content: space-between;
-    padding: 2% 0%;
   
     align-items: center;
+    margin-top: 100px;
 }
 
 .ultimate-features .text-column{
     width: 60%;
-    padding-left: 95px;
+    padding-left: 16%;
 }
 
 .ultimate-features .text-column .text-box{
-    width: 54%;
+    width: 56%;
 }
 
 .ultimate-features .text-column button{
     font-size: 16px;
-    font-family: "Poppins";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-family: "Poppins-Bold";
+    
     line-height: 2.75;
     background-color: rgb(37, 0, 249);
     width: 170px;
     height: 57px;
     border: none;
     border-radius: 30px;
+}
+
+.ultimate-features .text-column button a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .ultimate-features .image-column{
@@ -505,16 +563,15 @@ header #mobile-menu{
   
 .ultimate-features h3 {
     font-size: 36px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.278;
     margin-bottom: 30px;
 }
 
 .ultimate-features p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     margin-bottom: 60px;
@@ -562,9 +619,8 @@ header #mobile-menu{
   
 .ultimate-features .items .item h4 {
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 2.9;
 
 }
@@ -589,9 +645,8 @@ header #mobile-menu{
 
 .pricing h3 {
     font-size: 36px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.278;
     text-align: center;
     margin-bottom: 45px;
@@ -599,7 +654,7 @@ header #mobile-menu{
 
   .pricing p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     text-align: center;
@@ -617,7 +672,7 @@ header #mobile-menu{
 
   .pricing .toggle-box .active {
     background-color: rgb(37, 0, 249);
-   
+    font-family: "Poppins-Bold";
     margin: 2px;
     border-radius: 30px;
     color: white;
@@ -634,9 +689,6 @@ header #mobile-menu{
     height: 48px;
   }
 
-  
-  
-  
   .pricing .pricing-plans{
       display: flex;
       justify-content: center;
@@ -644,8 +696,12 @@ header #mobile-menu{
   .pricing .pricing-plans p{
       margin-top: 40px;
       margin-bottom: 0px;
+      color: rgb(153, 156, 165);
   }
 
+  
+  
+  
   .pricing .pricing-plans .plan{
       margin-right: 40px;
     display: flex;
@@ -663,9 +719,8 @@ header #mobile-menu{
   
   .pricing .pricing-plans .plan-header h3 {
     font-size: 60px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 0.967;
     text-align: center;
     margin-bottom: 35px;
@@ -673,9 +728,8 @@ header #mobile-menu{
 
   .pricing .pricing-plans .plan-header h4 {
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.4;
     text-align: center;
     margin-bottom: 10px;
@@ -683,6 +737,7 @@ header #mobile-menu{
 
   .pricing .pricing-plans .plan-header p {
       margin-bottom: 0px;
+      font-family: "Poppins";
   }
   
   .pricing .pricing-plans .plan-header{
@@ -696,15 +751,18 @@ header #mobile-menu{
     width: 210px;
     height: 56px;
     font-size: 16px;
-    font-family: "Poppins";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+     
     line-height: 1.75;
     text-align: center;
     border: none;
     border-radius: 30px;
     margin-bottom: 25px;
     margin-top: 40px;
+  }
+
+  .pricing .pricing-plans button a{
+    color: rgb(255, 255, 255);
+    font-family: "Poppins-Bold";
   }
   
   .pricing .pricing-plans a {
@@ -734,7 +792,7 @@ header #mobile-menu{
   
 .testimonial{
     
-    padding: 170px 0%;
+    padding: 0px 0px 170px 0px;
     display: flex;
     align-items: center;
   
@@ -748,21 +806,21 @@ header #mobile-menu{
 }
 
 .testimonial .text-box{
-    width: 39%;
+    width: 40%;
+    margin-left: 5%;
 }
 
 .testimonial .text-box h3 {
     font-size: 40px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.25;
     margin-bottom: 25px;
 }
 
 .testimonial .text-box p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     margin-bottom: 40px;
@@ -770,9 +828,8 @@ header #mobile-menu{
 
   .testimonial .text-box h4 {
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 2.9;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -837,8 +894,7 @@ header #mobile-menu{
   }
 
   .faq{
-    width: 80%;
-    padding: 2% 0%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -847,15 +903,17 @@ header #mobile-menu{
 }
 
 .faq .faq-heading{
-    width: 60%;
+    width: 70%;
     margin-bottom: 60px;
 }
 
+
+
+
 .faq h3 {
     font-size: 40px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.45;
     text-align: center;
     margin-bottom: 45px;
@@ -863,7 +921,7 @@ header #mobile-menu{
 
   .faq p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     text-align: center;
@@ -889,9 +947,8 @@ header #mobile-menu{
   }
 
   .faq .accordion button{
-    font-weight: bold;
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
     border: none;
     text-align: left;
@@ -900,9 +957,7 @@ header #mobile-menu{
     margin-bottom: 20px;
   }
   
- /* .faq .active, .faq .accordion:hover {
-    background-color: #ccc; 
-  }*/
+
   
   .faq .panel {
     display: none;
@@ -916,7 +971,7 @@ header #mobile-menu{
   
   .faq .panel p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     margin-bottom: 80px;
@@ -931,16 +986,15 @@ header #mobile-menu{
   
   .download-app h3 {
     font-size: 48px;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     color: rgb(36, 47, 81);
-    font-weight: bold;
     line-height: 1.208;
     margin-bottom: 45px;
   }
 
   .download-app p {
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(97, 99, 104);
     line-height: 1.625;
     margin-bottom: 45px;
@@ -970,6 +1024,7 @@ header #mobile-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
 
   footer ul{
@@ -979,19 +1034,23 @@ header #mobile-menu{
   }
 
   footer ul li {
-      color: white;
       display: inline;
       font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgb(255, 255, 255);
     line-height: 2.75;
     padding-right: 30px;
 
   }
+
+  footer ul li a{
+    text-decoration: none;
+    color: white;
+  }
   
   footer p {
     font-size: 14px;
-    font-family: "Poppins";
+    font-family: "Poppins-Medium";
     color: rgba(255, 255, 255, 0.212);
     line-height: 3.143;
     margin-top: 90px;

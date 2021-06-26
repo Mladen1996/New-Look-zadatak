@@ -1,3 +1,52 @@
+
+
+
+@media only screen and (min-width: 1500px) {
+    .main-section{
+        max-width: 100%;
+        height: 85vh;
+        background-size: cover;
+    }
+
+    .features .features-box{
+        margin-left: 10%;
+    }
+
+    .features .features-box{
+        width: 28%;
+    }
+
+    .designed .text-column{
+        width: 24%;
+    }
+
+    
+
+    .download-app .download-image{
+        width: 70%;
+    }
+
+    footer {
+        margin-top: -4%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .main-section{
+        height: 90vh;
+    }
+
+   
+
+    .features .features-box{
+        width: 25%;
+    }
+    .designed .text-column{
+        width: 21%;
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
     header #mobile-menu{
         display: block;
@@ -33,6 +82,7 @@
 
     .main-section .container .box{
         width: 100%;
+        margin-left: 0px;
     }
 
     .main-section .box h1{
@@ -151,8 +201,21 @@
 
     }
 
+        
+    .designed div{
+        width: 100%;
+    }
+
     .designed .text-column h3,.choose-app h3{
         font-size: 30px;
+    }
+
+    .choose-app{
+        width: 80%;
+    }
+
+    .choose-app .choose-app-heading{
+        width: 100%;
     }
 
     .choose-app .items{
@@ -234,6 +297,10 @@
 
     .testimonial .testimonial-author .arrows{
         margin-top: 20px;
+    }
+
+    .faq{
+        width: 80%;
     }
 
     .faq .faq-heading{
